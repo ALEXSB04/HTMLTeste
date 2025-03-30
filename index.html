@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <p>Esta é uma aula sobre formulários.</p>
+        <p>Formulários são uma forma de permitir ao 
+            usuário entrar dados na página e enviar para outra página.</p>
+        <form>
+            <p>
+                <label> Digite seu nome: <br/>
+                    <input type="text" value="Thales" name="nome" /> 
+                </label>
+            </p>
+            <p>
+                <label> Digite um número de 1 a 10: <br/>
+                    <input type="number" name="escolha" />
+                </label>
+            </p>
+            <p>
+                <label> Digite sua data de nascimento: <br/>
+                    <input type="date" name="nascimento" />
+                </label>
+            </p>
+            <p>
+                <label> Escolha um arquivo para upload: <br/>
+                    <input type="file" name="arquivo" />
+                </label>
+            </p>
+            <p>
+                Selecione as disciplinas para 2025-2: <br/>
+                <label>
+                    <input type="checkbox" value="TBD" name="disciplinas[]" />
+                    Tópicos em Banco de Dados 
+                </label>
+                <br/>
+                <label>
+                    <input type="checkbox" value="IAC" name="disciplinas[]"" />
+                    Introdução a Administração e Contabilidade
+                </label>
+                <br/>
+                <label>
+                    <input type="checkbox" value="IS" name="disciplinas[]"/>
+                    Interoperabilidade de Sistemas
+                </label>
+            </p>
+            <p>
+                Selecione o turno: <br/>
+                <label>
+                    <input type="radio" value="M" name="turno" /> Manhã 
+                </label> <br/>
+                <label>
+                    <input type="radio" value="T" name="turno" /> Tarde 
+                </label> <br/>
+                <label>
+                    <input type="radio" value="N" name="turno" /> Noite 
+                </label> 
+            </p>
+            <p>
+                <label>
+                    Digite sua senha: <br/>
+                    <input type="password" name="senha" />
+                </label>
+            </p>
+            <p>
+                <button type="submit" formaction="pagina11.html" formmethod="POST" formenctype="multipart/form-data">Enviar Dados</button>
+                <button type="submit" formaction="pagina11.php" formmethod="POST" formenctype="multipart/form-data">Enviar para PHP</button>
+                <button type="reset">Apagar</button>
+            </p>
+        </form>
+    </body>
+</html>
